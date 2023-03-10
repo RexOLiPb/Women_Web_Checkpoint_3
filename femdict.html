@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- connect to a Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/5d8bc56dc2.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
 
   <title>Women's Web - Dictionary</title>
@@ -18,7 +20,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="screen-nav">
       <!-- <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="literature.html">Literature</a></li>
@@ -35,12 +37,39 @@
           <li><a class="link-two" href="literature.html">Literature</a></li>
         </div>
         <div class="background-three link-container">
-          <li><a class="link-three" href="history.html">History and Politics</a></li>
+          <li><a class="link-three" href="history.html">History&Politics</a></li>
         </div>
-        <div class="background-four link-container">
-          <li><a class="link-three" href="femdict.html">Feminist Dictionary</a></li>
+        <div class="background-three link-container">
+          <li><a class="link-three" id="active" href="femdict.html">FeministDictionary</a></li>
         </div>
       </ul>
+    </nav>
+
+    <nav role="navigation" class="mobile-nav">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+        <div class="icon">
+          <i class="fa-brands fa-phoenix-framework"></i>
+          <li><a href="index.html">About</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-crown"></i>
+          <li><a href="literature.html">Literature</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-phoenix-squadron"></i>
+          <li><a href="history.html">History&Politics</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-book-bookmark" id="active-m"></i>
+          <li><a href="femdict.html">FeministDictionary</a></li>
+        </div>
+      </ul>
+     </div>
     </nav>
       <!-- definitions from meriam webster -->
       <!-- interpretations from

@@ -12,7 +12,9 @@
 
   <!-- connect to a Google font -->
   <link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/5d8bc56dc2.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
   <link rel="stylesheet" href="images/favicon1.png">
 
@@ -21,7 +23,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="screen-nav">
       <!-- <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="literature.html">Literature</a></li>
@@ -31,29 +33,72 @@
       <ul>
         <div class="background-one">
           <div class="link-container">
-            <li><a class="link-one" href="index.html">About</a></li>
+            <li><a class="link-one" id="active" href="index.html">About</a></li>
           </div>
         </div>
         <div class="background-two link-container">
           <li><a class="link-two" href="literature.html">Literature</a></li>
         </div>
         <div class="background-three link-container">
-          <li><a class="link-three" href="history.html">History and Politics</a></li>
+          <li><a class="link-three" href="history.html">History&Politics</a></li>
         </div>
-        <div class="background-four link-container">
-          <li><a class="link-three" href="femdict.html">Feminist Dictionary</a></li>
+        <div class="background-three link-container">
+          <li><a class="link-three" href="femdict.html">FeministDictionary</a></li>
         </div>
       </ul>
     </nav>
-    <h1> Woman's Web </h1>
-    <h2 color="red">The reason why I am here is jsut three thing: Fair, Fair, and F*** Fair as well!</h2>
+
+    <nav role="navigation" class="mobile-nav">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+        <div class="icon">
+          <i class="fa-brands fa-phoenix-framework" id="active-m"></i>
+          <li><a href="index.html">About</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-crown"></i>
+          <li><a href="literature.html">Literature</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-phoenix-squadron"></i>
+          <li><a href="history.html">History&Politics</a></li>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <li><a href="femdict.html">FeministDictionary</a></li>
+        </div>
+      </ul>
+     </div>
+    </nav>
+
+    <div class="skip">
+      <i class="fa-solid fa-dove" id="skipTop"></i>
+      <a href="#" class="back-to-top">Top</a>
+    </div>
+
+    <!-- <h1> Woman's Web </h1> -->
+    <div class="main-title">
+      <h1>Woman's Web<span>Literature, History & Dictionary</span></h1>
+    </div>
+    <div class="slogan">
+      <h2>The reason why I am here is jsut three thing: Fair, Fair, and F*** Fair as well!</h2>
+    </div>
+    
   </header>
 
   <main>
-    <img src="images/women_march_pano.jpg" width="2500px" alt="Image of the Ann Arbor Women's March">
 
-    <div>
-      <p>
+    <div class="main-image">
+      <img src="images/women_march_pano.jpg" width="2500px" alt="Image of the Ann Arbor Women's March">
+    </div>
+
+    <div class="container-p">
+      <div class="content-bg"></div>
+      <p class="content-p">
         This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a
           href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it
         happen. Growing up in a small, rural, conservative town, this class was really her first introduction to
@@ -61,10 +106,13 @@
         where a lot of feminist things could be compiled in one place, purely because people might not otherwise know
         about it. Her hometown may not have been forward thinking, but it did have internet connection.
       </p>
-      <p>
-        This website currently contains 3 pages other than this one - click below to see a short description of each!
-      </p>
     </div>
+
+    <p>
+      This website currently contains 3 pages other than this one - click below to see a short description of each!
+    </p>
+
+
     <div class="title">Literature</div>
 
     <div>
